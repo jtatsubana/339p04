@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jaime Tatsubana Portfolio Style Guide</title>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="1,2,3">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href=""/>
+<meta name="viewport" content="width=device-width" /> 
+<script src="js/jquery-1.11.3.min.js"></script>
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/jquery.bxslider.min.js"></script> -->
+<!-- <link href="css/jquery.bxslider.css" rel="stylesheet" /> -->
+<link href="common.css" rel="stylesheet" type="text/css" />
+<script>
+$( document ).ready(function() {
+
+	//pagetop btn
+	$(window).scroll(function () {
+	    if (document.body.scrollTop > 600){ //Show the slider after scrolling down 100px
+        	$('.pageTop').addClass('show');
+    	}
+	    else{
+	        $('.pageTop').removeClass('show');
+	    }
+	});
+});
+</script>
+</head>
+
+<body>
+
+<header>
+	<div class="container">
+		<h1 class="font-alegreya"><a href="index.html">TATSUBANA</a></h1>
+		<p class="font-alegreya"><a href="index.html">Unicorn Designer</a></p>
+	</div>
+</header>
+
+
+<section class="introduction">
+	<div class="container">		
+		<article class="row">
+			<p>こんにちわ、I'm Jaime Tatsubana.</p>
+			<p>I love all things design. I love all things Japan.</p>
+			<p>Lead of Digital at Bandai Namco. Previously UX at EA.</p>
+		</article>
+	</div>
+</section>
+
+
+<section class="style-guide">
+	<div class="container">
+
+		<h3>Style Guide</h3>
+		<ul>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>H1</p>
+				</div>
+				<div class="col-lg-9">
+					<h1>Heading</h1>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>H2</p>
+				</div>
+				<div class="col-lg-9">
+					<h2>Heading</h2>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>H3</p>
+				</div>
+				<div class="col-lg-9">
+					<h3>Heading</h3>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Paragraph</p>
+				</div>
+				<div class="col-lg-9">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nibh quam, euismod at finibus vitae, gravida vitae ex. Maecenas at dolor magna. Suspendisse pharetra mattis mi, vitae hendrerit metus. Sed vitae arcu imperdiet, placerat velit id, venenatis nisi. Sed consequat augue luctus maximus consequat. Cras ac magna elit. Sed dignissim magna tortor, sed aliquam nibh varius eu. Praesent feugiat augue et turpis efficitur, at dapibus justo aliquam. Suspendisse et sem in massa pulvinar mollis a vehicula massa. Donec at vulputate turpis, eu hendrerit ante. Aenean bibendum luctus nunc, posuere ullamcorper risus ultrices mollis. Suspendisse potenti. Donec vestibulum imperdiet imperdiet. Sed aliquet mattis felis, ut efficitur sem commodo eget.</p>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Captions</p>
+				</div>
+				<div class="col-lg-9">
+					<small>This is a caption</small>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>List</p>
+				</div>
+				<div class="col-lg-9">
+					<ul>
+						<li>Item</li>
+						<li>Item</li>
+						<li>Item</li>
+						<li>Item</li>
+					</ul>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Ordered List</p>
+				</div>
+				<div class="col-lg-9">
+					<ol>
+						<li>Ordered Item</li>
+						<li>Ordered Item</li>
+						<li>Ordered Item</li>
+						<li>Ordered Item</li>
+					</ol>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Text Link</p>
+				</div>
+				<div class="col-lg-9">
+					<a href="#">Download</a>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Button</p>
+				</div>
+				<div class="col-lg-9">
+					<a class="button dIBlock" href="#"><i class="fa fa-cloud-download"></i> Download</a>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Form Submit</p>
+				</div>
+				<div class="col-lg-9">
+					<button class="button"><i class="fa fa-send"></i> &nbsp;Submit</button>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+</section>
+
+<section class="style-guide">
+	<div class="container">
+
+		<h3>Branding</h3>
+		<ul>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Logo</p>
+				</div>
+				<div class="col-lg-9">
+					<div class="logo">
+						<h1 class="font-alegreya">TATSUBANA</h1>
+						<p class="font-alegreya">Unicorn Designer</p>
+					</div>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Font Families</p>
+				</div>
+				<div class="col-lg-9">
+					<h2>Georgia</h2>
+					<small>Paragraph, Headings, Buttons, and Captions</small>
+					<h2 class="font-alegreya mt08e">Alegreya Sans</h2>
+					<small class="font-alegreya">Branding and Sans-Serif</small>
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Colour Palette</p>
+				</div>
+				<div class="col-lg-9">
+					<div class="colour-palette col-lg-8 col-sm-10 col-xs-12 cf">
+						<div class="black"></div>
+						<div class="ocean"></div>
+					</div>
+				</div>
+			</li>
+			
+		</ul>
+
+	</div>
+</section>
+<!-- 
+
+<section class="style-guide">
+	<div class="container">
+
+		<h3>Wireframes</h3>
+		<ul>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Home</p>
+				</div>
+				<div class="col-lg-9">
+					<img class="w80 dBlock" src="img/wire_home.png" alt="Wireframe" />
+					
+				</div>
+			</li>
+			<li class="row flexbox">
+				<div class="col-lg-3">
+					<p>Project</p>
+				</div>
+				<div class="col-lg-9">
+					<img class="w80 dBlock" src="img/wire_project.png" alt="Wireframe" />
+				</div>
+			</li>
+		</ul>
+
+	</div>
+</section>
+ -->
+
+
+<main>
+
+
+
+</body>
+</html>
