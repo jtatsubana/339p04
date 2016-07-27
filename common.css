@@ -125,7 +125,7 @@ h4{
 ul.liMargins li{margin-bottom:1em;}
 
 .mt08e{margin-top:0.8em;}
-
+.mt2e{margin-top:2em;}
 .ma0{margin:0px;}
 .ma05{margin:5px;}
 .ma10{margin:10px;}
@@ -416,17 +416,28 @@ ul.liMargins li{margin-bottom:1em;}
     
 }
     
+ul.list-style-none{
+    list-style:none;
+}
 
 /* 
 Start website CSS --------------
 ------------------------------*/
-
+body{
+    padding-bottom:3em;
+}
 header *{
     /*text-align:center;*/
+}
+header .container{
+    align-items:flex-start;
 }
 header h1, .logo h1{
     line-height:0.8em;
     margin-top:0.9em;
+}
+header .logo{
+    
 }
 header p, .logo p{
     line-height:1em;
@@ -436,9 +447,17 @@ header p, .logo p{
     display:inline-block;
     border-bottom:1px solid #ccc;
 }
-.logo p{
-    border:0;
-    padding-bottom:0.8em;
+header ul.menu{
+    align-self:flex-end;
+    margin-bottom:1.9em;
+    margin-left:auto;
+}
+header ul.menu li{
+    list-style:none;
+    float:right;
+}
+header ul.menu li a:hover{
+    color:#5F9598;
 }
 header a{
     color:#333;
@@ -455,6 +474,10 @@ header a:hover,header h1 a:active,header h1 a:link,header h1 a:visited{
 .container{
     max-width:600px;
 }
+.container.large{
+    max-width:900px;
+}
+
 
 section{
     width:100%;
@@ -464,6 +487,23 @@ section .wrapper{
     width:1000px;
     margin:0 auto;
 }
+section.product-designs ul.design-list{
+    margin-top:1em;
+}
+section.product-designs ul.design-list>li{
+    list-style:none;
+    margin-bottom:2em;
+}
+section.product-designs ul.design-list>li::after{
+    width:33%;
+    display:block;
+    content:"";
+    height:1px;
+    background:#ccc;
+    margin:0 auto;
+    margin-top:2em;
+}
+
 .flexbox{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -480,16 +520,16 @@ section .wrapper{
 .button{
     color:#fff;
     padding:0.5em 1em 0.5em 1em;
-    border-radius:0.8em;
+    border-radius:0.4em;
     background:#8EC6D2;
     border:1px solid #8EC6D2;
-    -webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+    -webkit-transition: all 0.1s; /* Safari */
+    transition: all 0.1s;
 }
 .button i{
     color:#fff;
-    -webkit-transition: all 0.3s; /* Safari */
-    transition: all 0.3s;
+    -webkit-transition: all 0.1s; /* Safari */
+    transition: all 0.1s;
 }
 .button:hover,.button:active,.button:focus{
     color:#555;
@@ -499,6 +539,29 @@ section .wrapper{
 }
 .button:hover *,.button:active *,.button:focus *{
     color:#555;
+}
+.button.flipped{
+    color:#555;
+    padding:0.5em 1em 0.5em 1em;
+    border-radius:0.4em;
+    background:#fff;
+    border:1px solid #ccc;
+    -webkit-transition: all 0.1s; /* Safari */
+    transition: all 0.1s;
+}
+.button.flipped i{
+    color:#555;
+    -webkit-transition: all 0.1s; /* Safari */
+    transition: all 0.1s;
+}
+.button:hover,.button:active,.button:focus{
+    color:#fff;
+    background:#8EC6D2;
+    border:1px solid #8EC6D2;
+    text-decoration:none;
+}
+.button.flipped:hover *,.button.flipped:active *,.button.flipped:focus *{
+    color:#fff;
 }
 .colour-palette{
     border:1px solid #ccc;
@@ -513,4 +576,12 @@ section .wrapper{
 }
 .colour-palette .ocean{
     background:#8EC6D2;
+}
+
+
+/*
+Project Page
+*/
+.project-heading{
+    padding-bottom:2em;
 }
